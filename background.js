@@ -30,11 +30,6 @@ function getAccountTab(account, newTabId) {
                 reject();
                 return;
             }
-            if (tabs.length > 1) {
-                console.log('Several tabs, do nothing');
-                reject();
-                return;
-            }
 
             resolve(tabs[0]);
         });
